@@ -1,26 +1,14 @@
 [package]
-name = "nextos"
+name = "nextkernel"
 version = "0.0.0"
 authors = ["Muhammad Fiaz <contact@muhammadfiaz.com>"]
 edition = "2021"
 readme = "README.md"
-repository = "https://github.com/muhammadfiaz/nextos"
-homepage = "https://github.com/muhammadfiaz/nextos#readme"
-license = "GPL-3"
-keywords = ["operating-system", "rust"]
+repository = "https://github.com/muhammad-fiaz/NextKernel"
+homepage = "https://github.com/muhammad-fiaz/NextKernel#readme"
+license = "GPL-3.0"
+keywords = ["operating-system", "kernel", "rust"]
 
-
-[build-dependencies]
-
-[dependencies]
-bootloader = "0.9"
-
-[profile.dev]
-panic = "abort"
-
-[profile.release]
-panic = "abort"
-
-[[bin]]
-name = "nextos"
+[lib]
+name = "nextkernel"
 path = "src/boot.rs"
