@@ -1,0 +1,50 @@
+# Target directory (compiled output)
+target/
+
+# Cargo lock file (if using workspaces, you may want to track this)
+Cargo.lock
+
+# Rust build artifacts
+**/*.rlib
+**/*.rmeta
+
+# Rustc and Clippy metadata
+*.d
+*.o
+
+# Editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Binary and boot images
+*.iso
+*.bin
+*.img
+
+# QEMU and debugging files
+qemu.log
+*.elf
+*.map
+
+# Bootloader cache (if using bootimage)
+bootimage.bin
+
+# C/C++ related (if used)
+*.a
+*.so
+*.dSYM/
+
+# Core dumps and debugging files
+core.*
+*.core
+
+# Python virtual environments (if any scripts are used)
+venv/
+__pycache__/
